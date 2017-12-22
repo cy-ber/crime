@@ -20,7 +20,7 @@ if [[ $ether = "" ]]; then
         ether=eth0
 fi
 
-	source="https://raw.githubusercontent.com/yusuf-ardiansyah/ssl"
+	source="https://raw.githubusercontent.com/cy-ber/crime"
 
 
 # go to root
@@ -149,7 +149,7 @@ rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
 wget -O /etc/nginx/nginx.conf $source/debian7/nginx.conf
 mkdir -p /home/vps/public_html
-echo "<pre>Modified by YUSUF-ARDIANSYAH atau (082139743432)</pre>" > /home/vps/public_html/index.html
+echo "<pre>Modified by YUSUF-ARDIANSYAH phone (+682139743432)</pre>" > /home/vps/public_html/index.html
 echo "<?php phpinfo(); ?>" > /home/vps/public_html/info.php
 wget -O /etc/nginx/conf.d/vps.conf $source/debian7/vps.conf
 sed -i 's/listen = \/var\/run\/php5-fpm.sock/listen = 127.0.0.1:9000/g' /etc/php5/fpm/pool.d/www.conf
@@ -218,7 +218,7 @@ service ssh restart
 apt-get install dropbear
 sed -i 's/NO_START=1/NO_START=0/g' /etc/default/dropbear
 sed -i 's/DROPBEAR_PORT=22/DROPBEAR_PORT=80/g' /etc/default/dropbear
-sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 442"/g' /etc/default/dropbear
+sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 777"/g' /etc/default/dropbear
 echo "/bin/false" >> /etc/shells
 echo "/usr/sbin/nologin" >> /etc/shells
 sed -i 's/DROPBEAR_BANNER=""/DROPBEAR_BANNER="bannerssh"/g' /etc/default/dropbear
@@ -231,16 +231,16 @@ chmod 0644 /bannerssh
 service dropbear restart
 service ssh restart
 
-# upgrade dropbear 2014
+# upgade dropbear 2016.74
 apt-get install zlib1g-dev
-wget https://matt.ucc.asn.au/dropbear/releases/dropbear-2012.55.tar.bz2
-bzip2 -cd dropbear-2012.55.tar.bz2 | tar xvf -
-cd dropbear-2012.55
+wget $source/debian7/dropbear-2017.75.tar.bz2
+bzip2 -cd dropbear-2017.75.tar.bz2 | tar xvf -
+cd dropbear-2017.75
 ./configure
 make && make install
-mv /usr/sbin/dropbear /usr/sbin/dropbear1
+mv /usr/sbin/dropbear /usr/sbin/dropbear.old
 ln /usr/local/sbin/dropbear /usr/sbin/dropbear
-service dropbear restartt
+cd && rm -rf dropbear-2017.75 && rm -rf dropbear-2017.75.tar.bz2
 
 # install vnstat gui
 cd /home/vps/public_html/
@@ -443,7 +443,7 @@ echo "Service :" | lolcat
 echo "---------" | lolcat
 echo "OpenSSH  : 80, 22" | lolcat
 echo "SSL/TLS  : 443" | lolcat
-echo "Dropbear : 442" | lolcat
+echo "Dropbear : 777" | lolcat
 echo "Squid3   : 8080 limit to IP $MYIP" | lolcat
 echo "badvpn   : badvpn-udpgw port 7300" | lolcat
 echo "PPTP VPN : TCP 1723" | lolcat
@@ -487,6 +487,6 @@ cd ~/
 rm -f /root/z7.sh
 rm -f /root/pptp.sh
 rm -f /root/ovpn.sh
-rm -f /root/dropbear-2012.55.tar.bz2
-rm -rf /root/dropbear-2012.55
+rm -f /root/dropbear-2017.75.tar.bz2
+rm -rf /root/dropbear-2012.75
 rm -f /root/IP
