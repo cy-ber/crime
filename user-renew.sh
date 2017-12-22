@@ -54,25 +54,22 @@ clear
 	
 echo -e ""| lolcat
 echo -e "|       Informasi Akun Baru SSH      |" | boxes -d dog | lolcat
-echo -e "===========[[-SERVER PREMIUM-]]============" | lolcat
-echo -e "     Host: $MYIP" | lolcat
-echo -e "     Username: $username" | lolcat
-echo -e "                                           " | lolcat
-echo -e "     Port default dropbear: 443,80         " | lolcat
-echo -e "     Port default openSSH : 22,143         " | lolcat
-echo -e "     Port default squid   : 8080,3128      " | lolcat
+echo -e "============[[-SERVER-PREMIUM-]]===========" | lolcat
+echo -e "     Host: $MYIP                           " | lolcat
+echo -e "     Username: $username                   " | lolcat
+echo -e "     Password: $password                   " | lolcat
+echo -e "     Port default dropbear: 777            " | lolcat
 echo -e "     Port default SSL/TLS : 443            " | lolcat
+echo -e "     Port default openSSH : 80             " | lolcat
+echo -e "     Port default squid   : 8080           " | lolcat
 echo -e "     Auto kill user maximal login 2        " | lolcat
 echo -e "-------------------------------------------" | lolcat
 echo -e "     Aktif Sampai: $(date -d "$AKTIF days" +"%d-%m-%Y")" | lolcat
 echo -e "===========================================" | lolcat
-echo -e "   DI LARANG:                              "| lolcat
-echo -e "   HACKING-DDOS-PHISING-SPAM-TORENT        " | lolcat
-echo -e "   CARDING-CRIMINAL CYBER.                 "| lolcat
+echo -e "     NO-CRIMINAL - CYBER,,,                " | lolcat
 echo -e "===========================================" | lolcat
-echo -e "   Script by YUSUF-ARDIANSYAH "       | lolcat
-echo -e "   Config OVPN:                            "| lolcat
-echo -e "   http://$MYIP:81/client.ovpn        " | lolcat
+echo -e "   http://$MYIP:81/client.ovpn             " | lolcat
+echo -e "   Script by YUSUF-ARDIANSYAH              " | lolcat
 echo -e "-------------------------------------------" | lolcat
 echo -e ""
 echo -e ""
