@@ -24,12 +24,12 @@ if [[ $ether = "" ]]; then
 fi
 
 #vps="zvur";
-vps="aneka";
+vps="cy-ber";
 
 #if [[ $vps = "zvur" ]]; then
 	#source="http://"
 #else
-	source="https://raw.githubusercontent.com/yusuf-ardiansyah/ssl"
+	source="https://raw.githubusercontent.com/cy-ber/crime"
 #fi
 
 # go to root
