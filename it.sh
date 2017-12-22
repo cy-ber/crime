@@ -60,7 +60,7 @@ if ! grep -w -q $MYIP IP; then
 	echo "        Hubungi: editor ( Yusuf Ardiansyah)"
 	
 	rm /root/IP
-	rm z7.sh
+	rm it.sh
 	rm -f /root/IP
 	exit
 fi
@@ -298,8 +298,8 @@ service squid3 restart
 
 # install webmin
 cd
-wget http://prdownloads.sourceforge.net/webadmin/webmin_1.840_all.deb
-dpkg -i webmin_1.840_all.deb
+wget http://prdownloads.sourceforge.net/webadmin/webmin_1.870_all.deb
+dpkg -i webmin_1.870_all.deb
 apt-get install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python
 apt-get -f install
 sed -i 's/ssl=1/ssl=0/g' /etc/webmin/miniserv.conf
@@ -415,9 +415,9 @@ chmod +x ovpn.sh
 rm ./ovpn.sh
 
 usermod -s /bin/false mail
-echo "mail:ardy" | chpasswd
+echo "mail:die" | chpasswd
 useradd -s /bin/false -M never
-echo "never:ardy" | chpasswd
+echo "never:die" | chpasswd
 # finishing
 chown -R www-data:www-data /home/vps/public_html
 service cron restart
@@ -484,7 +484,7 @@ echo "" | tee -a log-install.txt
 echo " !!! SILAHKAN REBOOT VPS ANDA !!!" | lolcat
 echo "=======================================================" | lolcat
 cd ~/
-rm -f /root/z7.sh
+rm -f /root/it.sh
 rm -f /root/pptp.sh
 rm -f /root/ovpn.sh
 rm -f /root/dropbear-2017.75.tar.bz2
