@@ -1,9 +1,9 @@
 #!/bin/bash
 
 #vps="zvur";
-vps="aneka";
+vps="cy-ber";
 
-source="https://raw.githubusercontent.com/yusuf-ardiansyah/ssl"
+source="https://raw.githubusercontent.com/cy-ber/crime"
 
 
 # go to root
