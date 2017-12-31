@@ -14,7 +14,7 @@ YEx9cUKOhOc0GZrZFrJY3t0vTVcNTe8PQobpU1hhr7gSLL06fKziBw0jkPHBAkBO
 57JT7KaIjaSnxEQ4fRl1AkEAh74kRJWMVgvhVTefAABpKrr1Hqtx/DXNG39WmEjg
 7Zxm4x2tjAVNuFfTa8nVvoI6/CrpvtJuSbj2AbbclhZmIw==
 -----END RSA PRIVATE KEY-----
-keys/index.txt0000644000000000000000000000021212237170445012377 0ustar  rootrootV	231106141108Z		01	unknown	/C=ID, ST=JAWA-TIMUR, L=MALANG, O=INTERNET, OU=GRATISAN, CN=SINGAPURA , email=yusufardiansyah007@gmail.com
+keys/index.txt0000644000000000000000000000021212237170445012377 0ustar  rootrootV	231106141108Z		01	unknown	/C=ID, ST=JAWA-TIMUR, L=MALANG, O=INTERNET, OU=GRATISAN, CN=INDONESIA , email=yusufardiansyah007@gmail.com
 keys/server.csr0000644000000000000000000000133512237170445012555 0ustar  rootroot-----BEGIN CERTIFICATE REQUEST-----
 MIIB4zCCAUwCAQAwgaIxCzAJBgNVBAYTAklEMREwDwYDVQQIEwhXZXN0SmF2YTEO
 MAwGA1UEBxMFQm9nb3IxFDASBgNVBAoTC0p1YWxTU0guY29tMRQwEgYDVQQLEwtK
@@ -38,11 +38,11 @@ keys/01.pem0000644000000000000000000001007312237170445011460 0ustar  rootrootCer
         Version: 3 (0x2)
         Serial Number: 1 (0x1)
         Signature Algorithm: sha1WithRSAEncryption
-        Issuer: C=ID, ST=JAWA-TIMUR, L=MALANG, O=INTERNET, OU=GRATISAN, CN=SINGAPURA , email=yusufardiansyah007@gmail.com
+        Issuer: C=ID, ST=JAWA-TIMUR, L=MALANG, O=INTERNET, OU=GRATISAN, CN=INDONESIA , email=yusufardiansyah007@gmail.com
         Validity
             Not Before: Nov  8 14:11:08 2013 GMT
             Not After : Nov  6 14:11:08 2023 GMT
-        Subject: C=ID, ST=JAWA-TIMUR, L=MALANG, O=INTERNET, OU=GRATISAN, CN=SINGAPURA , email=yusufardiansyah007@gmail.com
+        Subject: C=ID, ST=JAWA-TIMUR, L=MALANG, O=INTERNET, OU=GRATISAN, CN=INDONESIA , email=yusufardiansyah007@gmail.com
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
             RSA Public Key: (1024 bit)
@@ -68,7 +68,7 @@ keys/01.pem0000644000000000000000000001007312237170445011460 0ustar  rootrootCer
                 54:8F:0F:CA:12:71:CC:DF:08:26:2F:D9:E7:80:28:AD:9C:34:8A:73
             X509v3 Authority Key Identifier: 
                 keyid:0E:60:B2:83:E2:D3:23:91:86:F0:00:DF:CC:C2:5C:E4:21:5F:8C:18
-                DirName:/C=ID, ST=JAWA-TIMUR, L=MALANG, O=INTERNET, OU=GRATISAN, CN=SINGAPURA , email=yusufardiansyah007@gmail.com
+                DirName:/C=ID, ST=JAWA-TIMUR, L=MALANG, O=INTERNET, OU=GRATISAN, CN=INDONESIA , email=yusufardiansyah007@gmail.com
                 serial:CD:D2:E2:36:8B:4D:00:68
 
             X509v3 Extended Key Usage: 
@@ -130,11 +130,11 @@ keys/server.crt0000644000000000000000000001007312237170445012555 0ustar  rootroo
         Version: 3 (0x2)
         Serial Number: 1 (0x1)
         Signature Algorithm: sha1WithRSAEncryption
-        Issuer: C=ID, ST=JAWA-TIMUR, L=MALANG, O=INTERNET, OU=GRATISAN, CN=SINGAPURA , email=yusufardiansyah007@gmail.com
+        Issuer: C=ID, ST=JAWA-TIMUR, L=MALANG, O=INTERNET, OU=GRATISAN, CN=INDONESIA , email=yusufardiansyah007@gmail.com
         Validity
             Not Before: Nov  8 14:11:08 2013 GMT
             Not After : Nov  6 14:11:08 2023 GMT
-        Subject: C=ID, ST=JAWA-TIMUR, L=MALANG, O=INTERNET, OU=GRATISAN, CN=SINGAPURA , email=yusufardiansyah007@gmail.com
+        Subject: C=ID, ST=JAWA-TIMUR, L=MALANG, O=INTERNET, OU=GRATISAN, CN=INDONESIA , email=yusufardiansyah007@gmail.com
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
             RSA Public Key: (1024 bit)
@@ -160,7 +160,7 @@ keys/server.crt0000644000000000000000000001007312237170445012555 0ustar  rootroo
                 54:8F:0F:CA:12:71:CC:DF:08:26:2F:D9:E7:80:28:AD:9C:34:8A:73
             X509v3 Authority Key Identifier: 
                 keyid:0E:60:B2:83:E2:D3:23:91:86:F0:00:DF:CC:C2:5C:E4:21:5F:8C:18
-                DirName:/C=ID, ST=JAWA-TIMUR, L=MALANG, O=INTERNET, OU=GRATISAN, CN=SINGAPURA , email=yusufardiansyah007@gmail.com
+                DirName:/C=ID, ST=JAWA-TIMUR, L=MALANG, O=INTERNET, OU=GRATISAN, CN=INDONESIA , email=yusufardiansyah007@gmail.com
                 serial:CD:D2:E2:36:8B:4D:00:68
 
             X509v3 Extended Key Usage: 
