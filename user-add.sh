@@ -45,8 +45,8 @@ echo -e "============[[-SERVER-PREMIUM-]]===========" | lolcat
 echo -e "     Host: $MYIP                           " | lolcat
 echo -e "     Username: $username                   " | lolcat
 echo -e "     Password: $password                   " | lolcat
-echo -e "     Port default dropbear: 777            " | lolcat
 echo -e "     Port default SSL/TLS : 443            " | lolcat
+echo -e "     Port default dropbear: 442            " | lolcat
 echo -e "     Port default openSSH : 80             " | lolcat
 echo -e "     Port default squid   : 8080           " | lolcat
 echo -e "     Auto kill user maximal login 2        " | lolcat
