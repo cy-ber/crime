@@ -218,7 +218,7 @@ service ssh restart
 apt-get install dropbear
 sed -i 's/NO_START=1/NO_START=0/g' /etc/default/dropbear
 sed -i 's/DROPBEAR_PORT=22/DROPBEAR_PORT=80/g' /etc/default/dropbear
-sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 777"/g' /etc/default/dropbear
+sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 442"/g' /etc/default/dropbear
 echo "/bin/false" >> /etc/shells
 echo "/usr/sbin/nologin" >> /etc/shells
 sed -i 's/DROPBEAR_BANNER=""/DROPBEAR_BANNER="bannerssh"/g' /etc/default/dropbear
@@ -443,7 +443,7 @@ echo "Service :" | lolcat
 echo "---------" | lolcat
 echo "OpenSSH  : 80, 22" | lolcat
 echo "SSL/TLS  : 443" | lolcat
-echo "Dropbear : 777" | lolcat
+echo "Dropbear : 442" | lolcat
 echo "Squid3   : 8080 limit to IP $MYIP" | lolcat
 echo "badvpn   : badvpn-udpgw port 7300" | lolcat
 echo "PPTP VPN : TCP 1723" | lolcat
